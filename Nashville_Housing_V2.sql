@@ -82,13 +82,13 @@ ALter table Nashville_Housing
 Add Property_City nvarchar(255) 
 
 Update Nashville_Housing
-SET Property_City = PARSENAME(REPLACE(PropertyAddress,',', '.'), 2)
+SET Property_City = PARSENAME(REPLACE(PropertyAddress,',', '.'), 1)
 
 ALter table Nashville_Housing
 Add Property_Address nvarchar(255) 
 
 Update Nashville_Housing
-SET Property_Address = PARSENAME(REPLACE(PropertyAddress,',', '.'), 1)
+SET Property_Address = PARSENAME(REPLACE(PropertyAddress,',', '.'), 2)
 
 
 
